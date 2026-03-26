@@ -149,11 +149,7 @@ function searchSong() {
         return;
     }
 
-    const filteredList = musicList.filter(m =>
-        m.nameTitle.toLowerCase().includes(keyword) ||
-        m.nameArtist.toLowerCase().includes(keyword)
-    );
-
+    const filteredList = musicList.filter(m => m.nameTitle.toLowerCase().includes(keyword));
     renderFilteredList(filteredList);
 }
 
