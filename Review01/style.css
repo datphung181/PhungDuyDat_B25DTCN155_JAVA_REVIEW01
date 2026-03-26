@@ -38,6 +38,14 @@ h2 {
     background: #1ed760;
 }
 
+#cancelBtn {
+    background: #e74c3c;
+}
+
+#cancelBtn:hover {
+    background: #ff6b5a;
+}
+
 #search {
     width: 100%;
     padding: 10px;
