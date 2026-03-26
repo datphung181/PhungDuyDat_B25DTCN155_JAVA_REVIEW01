@@ -143,12 +143,6 @@ search.addEventListener("input", searchSong);
 
 function searchSong() {
     const keyword = search.value.toLowerCase().trim();
-
-    if (!keyword) {
-        renderMusicList();
-        return;
-    }
-
     const filteredList = musicList.filter(m => m.nameTitle.toLowerCase().includes(keyword));
     renderFilteredList(filteredList);
 }
